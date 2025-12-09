@@ -15,4 +15,7 @@ done only to show the story and the tutorial phases (and then a real simple roud
 4_How many blocks should the pile have to provide a challenge?
 
 ---
-the game in itch.io:
+the game in itch.io:https://yousef-masarwa97.itch.io/hitrun-2d
+
+<img width="1091" height="425" alt="04eb6c8a-9020-418f-b56c-b92e4e538fb9" src="https://github.com/user-attachments/assets/b652ba36-4b79-410f-ab27-c0fcda673022" />
+
