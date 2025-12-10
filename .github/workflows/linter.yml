@@ -1,8 +1,8 @@
 name: Unity C# Linter
 
 on:
-  push:  # Trigger on every push
-  pull_request:  # Also run on pull requests
+  push:
+  pull_request:
 
 jobs:
   lint:
@@ -16,11 +16,10 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '7.x'  # Adjust to the required .NET version for Unity
+          dotnet-version: '7.x'
 
       - name: Install dotnet-format
         run: dotnet tool install -g dotnet-format
 
       - name: Run dotnet-format
-        # Run dotnet-format in check mode to identify issues only in .cs files in Assets/Scripts and subfolders
-        run: dotnet-format ${{ github.workspace }}Assets/Scripts --check --folder --include **/*.cs --verbosity diagnostic
+        run: dotnet-format ${{ github.workspace }}/Assets/Scripts --check --folder --include "**/*.cs" --verbosity diagnostic
